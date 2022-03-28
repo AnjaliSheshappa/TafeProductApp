@@ -39,6 +39,7 @@ namespace ProductApps
                 totalChargeTextBlock.Text = (myPayment + 25.0M).ToString();
 
                 wrapchargeText.Text = (myPayment + 25.0M+5.0M).ToString();
+                gstTextBlock.Text= ((myPayment + 25.0M + 5.0M)*1.1M).ToString();
 
             }
             catch (FormatException)
