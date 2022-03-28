@@ -14,8 +14,10 @@ namespace ProductApps
         private decimal delivery;
         private decimal wrapping;
         private decimal gst;
+
         // addede
         private decimal TotalCharge;
+        private decimal wrapCharge;
 
         private decimal Price
         {
@@ -69,7 +71,10 @@ namespace ProductApps
           //added
             
             TotalCharge = TotalPayment + 25;
+            wrapCharge = TotalCharge + 5;
             return TotalPayment;
+            return wrapCharge;
+
 
         }
 

@@ -38,6 +38,7 @@ namespace ProductApps
 
                 totalChargeTextBlock.Text = (myPayment + 25.0M).ToString();
 
+                wrapchargeText.Text = (myPayment + 25.0M+5.0M).ToString();
 
             }
             catch (FormatException)
@@ -57,6 +58,11 @@ namespace ProductApps
         private void closeButton_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
